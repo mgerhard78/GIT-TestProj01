@@ -1,0 +1,50 @@
+---
+
+TestCase:
+
+  Description: Module could be defined in place, not only referenced, context might be an object defining module + assoc
+
+  TestSteps:
+
+    - TestStep:
+
+        Value: '{click}'
+
+        ActionMode: Input
+
+        Module:
+
+          Identification:
+
+            - Id: Search
+
+            - Tag: Button
+
+          BusinessType: Button
+
+          Context:
+
+            - Module:
+              TestCase:
+
+  TestSteps:
+
+    - TestStep:
+
+        Value: '{click}'
+
+        ActionMode: Input
+
+        Module:
+
+          Identification:
+
+            - Id: Search
+
+            - Tag: Button
+
+          BusinessType: Button
+
+          Context:
+
+            - Module:
